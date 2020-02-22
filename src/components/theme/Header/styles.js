@@ -13,9 +13,9 @@ export const Overlay = styled.div`
 	display: none;
 	transition: 0.4s;
 
-	${({ sidebar }) =>
-		sidebar &&
-		`
+	${({sidebar}) =>
+  sidebar &&
+  `
 			display: block;
 			z-index: 4;	
 	`}

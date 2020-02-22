@@ -6,9 +6,9 @@ export const Wrapper = styled.div`
 		text-decoration: none;
 	}
 
-	${({ desktop }) =>
-		desktop
-			? `
+	${({desktop}) =>
+  desktop
+    ? `
 			@media (max-width: 960px) {
 					display: none;
 			}
@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 					}
 			}
 		`
-			: `
+    : `
 			padding: 3rem;
 			display: flex;
 			flex-direction: column;

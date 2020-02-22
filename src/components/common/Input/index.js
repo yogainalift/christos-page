@@ -9,9 +9,9 @@ export const Input = styled.input`
 	margin-bottom: 0.5rem;
 	transition: 0.3s;
 
-	${({ error }) =>
-		error &&
-		`
+	${({error}) =>
+  error &&
+  `
 		border-color: #ff4136;
 	`}
 

@@ -6,6 +6,6 @@ export default () => (
   <Layout>
     <SEO/>
     <Intro/>
-		<Skills/>
+    <Skills/>
   </Layout>
 )

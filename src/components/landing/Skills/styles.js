@@ -8,10 +8,9 @@ export const Wrapper = styled.div`
 `
 
 export const SkillsWrapper = styled.div`
-	padding: 4rem 0;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: start;
 
 	@media (max-width: 960px) {
 		flex-direction: column;

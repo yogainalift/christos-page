@@ -19,15 +19,9 @@ const mySocial = [
   },
   {
     'id': 2,
-    'name': 'StackOverflow',
-    'link': `${socialLinks.stackoverflow}`,
-    'icon': '/icons/stackoverflow.svg',
-  },
-  {
-    'id': 3,
-    'name': 'Twitter',
-    'link': `${socialLinks.twitter}`,
-    'icon': '/icons/twitter.svg',
+    'name': 'LinkedIn',
+    'link': `${socialLinks.linkedin}`,
+    'icon': '/icons/linkedin.svg',
   },
 ]
 
@@ -35,14 +29,10 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>Christos Tselepidas</h2>
         <span>
-           © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img" />
-          {' '}
-          by{' '}
+           © All rights are reserved | {new Date().getFullYear()} | Made by{' '}
           <a
-            href="https://christos.page"
+            href={socialLinks.linkedin}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -56,10 +46,11 @@ export const Footer = () => (
             key={id}
             href={link}
             target="_blank"
+            style={{ padding: `0 5px` }}
             rel="noopener noreferrer"
             aria-label={`follow me on ${name}`}
           >
-            <img width="24" src={icon} alt={name} />
+            <img width="24" src={icon} alt={name}/>
           </a>
         ))}
       </Links>
