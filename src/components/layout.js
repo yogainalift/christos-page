@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './layout.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config, library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 library.add(fab, faCheckSquare, faCoffee);
+config.autoAddCss = false;
+
 
 const Layout = ({ children }) => {
   return (
