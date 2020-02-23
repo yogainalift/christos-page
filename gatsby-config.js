@@ -33,11 +33,9 @@ module.exports = {
         fonts: [
           {
             family: `Raleway`,
-            subsets: [`latin`],
           },
           {
-            family: `Helvetica Neue`,
-            variants: [`400`, `700`],
+            family: `Open Sans`,
           },
         ],
       },

@@ -169,7 +169,7 @@ main.container section.content h1 {
   font-size: 7.35rem;
   padding: 0;
   letter-spacing: -0.1rem;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 900;
 }
@@ -189,7 +189,7 @@ main.container section.content a {
   margin: 0 auto;
   display: inline-block;
   width: auto;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   background: #0067cc;
