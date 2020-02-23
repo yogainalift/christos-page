@@ -1,96 +1,34 @@
-const path = require('path')
-const config = require('./data/config')
-
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 module.exports = {
   siteMetadata: {
-    title: config.defaultTitle,
-    description: config.defaultDescription,
-    author: config.author,
+    title: `Christos`,
+    description: `Christos Tselepidas personal page`,
+    author: `Christos Tselepidas`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
-    /* {
-  resolve: 'gatsby-source-filesystem',
-  options: {
-    name: 'assets',
-    path: '${__dirname}/src/assets',
-  },
-}, */
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    // {
-    // 	resolve: 'gatsby-source-graphql',
-    // 	options: {
-    // 		typeName: 'GitHub',
-    // 		fieldName: 'github',
-    // 		url: 'https://api.github.com/graphql',
-    // 		headers: {
-    // 			Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
-    // 		},
-    // 		fetchOptions: {},
-    // 	},
-    // },
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        color: config.themeColor,
-        showSpinner: false,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
+        name: `christos-page`,
+        short_name: `christos`,
+        start_url: `/`,
+        background_color: `#0067cc`,
+        theme_color: `#0067cc`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: './static/favicon/favicon.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.defaultTitle,
-        short_name: 'starter',
-        start_url: '/',
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'minimal-ui',
-        icon: './static/favicon/favicon.png',
-      },
-    },
-    'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          Components: path.resolve(__dirname, 'src/components'),
-          Common: path.resolve(__dirname, 'src/components/common'),
-          Static: path.resolve(__dirname, 'static/'),
-          Theme: path.resolve(__dirname, 'src/components/theme'),
-          Data: path.resolve(__dirname, 'data/config'),
-        },
-      },
-    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
-}
+};
