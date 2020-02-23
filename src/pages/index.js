@@ -10,9 +10,9 @@ const IndexPage = () => (
     <section className="content">
       <h1>
         <span style={{ display: 'block' }}>Christos</span>
-        <span style={{ display: 'block' }}>Tselepidas</span>
+        <span style={{ display: 'block', paddingLeft: '0.47rem' }}>Tselepidas</span>
       </h1>
-      <p><Typist cursor={{ show: false }}>Frontend Developer</Typist></p>
+      <Typist cursor={{ show: false }}><p>Frontend Developer</p></Typist>
       <a href="mailto:ctselepidas@gmail.com" title="Email Christos Tselepidas">
         Contact
       </a>
