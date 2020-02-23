@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Typist from 'react-typist';
 
 const IndexPage = () => (
   <Layout>
@@ -11,7 +12,7 @@ const IndexPage = () => (
         <span style={{ display: 'block' }}>Christos</span>
         <span style={{ display: 'block' }}>Tselepidas</span>
       </h1>
-      <p>Frontend Developer</p>
+      <p><Typist cursor={{ show: false }}>Frontend Developer</Typist></p>
       <a href="mailto:ctselepidas@gmail.com" title="Email Christos Tselepidas">
         Contact
       </a>
