@@ -151,6 +151,10 @@ blockquote ul li {
   visibility: visible;
 }
 
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 /***** Styles *****/
 main.container {
   height: 100%;
@@ -237,25 +241,10 @@ footer a.li:hover {
   }
 
   main.container section.content a {
-    margin: 40px auto;
+    margin: 30px auto;
     display: block;
     padding: 1.35rem 1.5rem;
     font-size: 1.4rem;
-  }
-}
-
-@media all and (max-width: 600px) {
-  html, body {
-    font-size: 9px;
-  }
-
-  main.container section.content a {
-    padding: 1.45rem 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  footer a {
-    font-size: 16px;
   }
 }
 
