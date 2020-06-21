@@ -9,11 +9,11 @@ const IndexPage = () => (
     <SEO title="Christos"/>
     <section className="content">
       <h1>
-        <span style={{ display: 'block' }}>Christos</span>
-        <span style={{ display: 'block', paddingLeft: '0.47rem' }}>Tselepidas</span>
+        <span style={{display: 'block'}}>Christos</span>
+        <span style={{display: 'block'}}>Tselepidas</span>
       </h1>
-      <Typist cursor={{ show: false }}><p>Frontend Developer</p></Typist>
-      <a href="mailto:ctselepidas@gmail.com" title="Email Christos Tselepidas">
+      <Typist cursor={{show: false}}><p>Frontend Developer</p></Typist>
+      <a style={{marginLeft: '.4rem'}} href="mailto:ctselepidas@gmail.com" title="Email Christos Tselepidas">
         Contact
       </a>
     </section>
