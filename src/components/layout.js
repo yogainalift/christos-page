@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/yogainalift"
-          title="Christos Tselepidas on Twitter"
+          title="Christos Tselepidas on Github"
         >
           <FontAwesomeIcon icon={['fab', 'github']}/>
         </a>
